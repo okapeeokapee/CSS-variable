@@ -1,4 +1,5 @@
 :root{
+  --my-hue:200;
   --my-color:blue;
   /* --my-property:color; */
   --my-margin-left:32px;
@@ -16,11 +17,11 @@ h1{
 
 
 body{
-  background: hsl(100, 40%, 95%);
+  background: hsl(var(--my-hue), 40%, 95%);
 }
 
 h2,p{
-  color: hsl(100, 35%, 55%);
+  color: hsl(var(--my-hue), 35%, 55%);
 }
 .btn{
   color: #fff;
@@ -28,5 +29,6 @@ h2,p{
   padding:8px;
   border-radius: 4px;
   text-align: center;
-  background: hsl(100 , 50%, 50%);
+  /* background: hsl(var(--my-hue) , 50%, 50%); */
+  background: hsl(calc(var(--my-hue)+60) , 50%, 50%);
 }
