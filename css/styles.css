@@ -1,5 +1,7 @@
 :root{
   --my-color:blue;
+  /* --my-property:color; */
+  --my-margin-left:32px;
 }
 
 /* body{
@@ -7,10 +9,9 @@
 } */
 
 h1{
-  /* --my-color:orange; */
-  --my-color:blue;
   color: var(--my-color);
   border-bottom: 3px solid var(--my-color);
+  margin-left:var(--my-margin-left) ;
 }
 
 p{
